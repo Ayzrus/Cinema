@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\cinema\\usercontrols\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|solutionrelative:cinema\\usercontrols\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\cinema\\usercontrols\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|solutionrelative:cinema\\usercontrols\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Cinema\\UserControls\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Dashboard.cs [Design]",
+              "RelativeToolTip": "Cinema\\UserControls\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T19:02:26.479Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Cinema\\UserControls\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Dashboard.cs",
+              "RelativeToolTip": "Cinema\\UserControls\\Dashboard.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T18:50:27.976Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
