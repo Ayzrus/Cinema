@@ -1,4 +1,5 @@
-﻿using Sessoes;
+﻿using Filmes;
+using Sessoes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,17 +14,23 @@ namespace Cinema.UserControls
 {
     public partial class Dashboard : UserControl
     {
-        private List<SessoesClass> sessoes; // Lista para armazenar todas as sessões
+        private readonly List<SessoesClass> sessoes; // Lista para armazenar todas as sessões
 
         public Dashboard()
         {
             InitializeComponent();
 
-            // Obtém todas os cinemas
+            // Obtém todos os cinemas
             List<CinemaClass> cinemas = CinemaClass.GetCinemas();
 
             // Conta quantos cinemas existem
             CinemasData.Text = cinemas.Count.ToString();
+
+            // Obtém todos os filmes em exibição
+            int totalFilmes = FilmesClass.GetTotalFilmesEmExibicao();
+
+            // Conta quantos filmes em exibição há naquele momento
+            FilmesData.Text = totalFilmes.ToString();
 
             // Adiciona um item para mostrar todas as sessões
             cinemas.Insert(0, new CinemaClass { Id_Cinema = -1, Nome = "Mostrar Todos" });

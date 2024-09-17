@@ -1,4 +1,5 @@
 ﻿using ClassLibrary;
+using Local;
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 
@@ -18,6 +19,8 @@ namespace Cinema
         public string Nome { get; set; }
         public int Id_Local { get; set; }
 
+        public string Local { get; set; }
+
         #endregion Propriedades
 
         #region Métodos Estáticos
@@ -30,7 +33,10 @@ namespace Cinema
             var cinemas = new List<CinemaClass>();
             using (var connection = new Connection())
             {
-                var query = $"SELECT * FROM {Table}";
+                var query = $@"
+                    SELECT C.*, L.Descricao AS Local FROM {Table} C
+                    LEFT JOIN {LocalClass.Table} L ON L.Id = C.Id_local
+                ";
                 using (var command = new MySqlCommand(query, connection.MySqlConnection))
                 {
                     using (var reader = command.ExecuteReader())
@@ -106,6 +112,7 @@ namespace Cinema
                 Id_Cinema = reader.Cast<int>("Id_Cinema"),
                 Nome = reader.Cast<string>("Nome"),
                 Id_Local = reader.Cast<int>("Id_Local"),
+                Local = reader.Cast<string>("Local")
             };
             return Aeroporto;
         }

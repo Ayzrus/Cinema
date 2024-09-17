@@ -54,11 +54,83 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls\Dashboard.cs">
+    <Compile Include="UserControls\Cinemas\ListagemCinemas.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Dashboard.Designer.cs">
+    <Compile Include="UserControls\Cinemas\ListagemCinemas.Designer.cs">
+      <DependentUpon>ListagemCinemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dashboard\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dashboard\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cinemas\EditarCinemas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cinemas\EditarCinemas.Designer.cs">
+      <DependentUpon>EditarCinemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cinemas\RegistarCinemas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cinemas\RegistarCinemas.Designer.cs">
+      <DependentUpon>RegistarCinemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Filmes\FilmesEditar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Filmes\FilmesEditar.Designer.cs">
+      <DependentUpon>FilmesEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Filmes\FilmesListagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Filmes\FilmesListagem.Designer.cs">
+      <DependentUpon>FilmesListagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Filmes\FilmesRegistar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Filmes\FilmesRegistar.Designer.cs">
+      <DependentUpon>FilmesRegistar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Salas\SalasEditar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Salas\SalasEditar.Designer.cs">
+      <DependentUpon>SalasEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Salas\SalasListagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Salas\SalasListagem.Designer.cs">
+      <DependentUpon>SalasListagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Salas\SalasRegistar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Salas\SalasRegistar.Designer.cs">
+      <DependentUpon>SalasRegistar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Sessoes\SessoesEditar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Sessoes\SessoesEditar.Designer.cs">
+      <DependentUpon>SessoesEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Sessoes\SessoesListagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Sessoes\SessoesListagem.Designer.cs">
+      <DependentUpon>SessoesListagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Sessoes\SessoesRegistar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Sessoes\SessoesRegistar.Designer.cs">
+      <DependentUpon>SessoesRegistar.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -72,8 +144,44 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\Dashboard.resx">
+    <EmbeddedResource Include="UserControls\Cinemas\ListagemCinemas.resx">
+      <DependentUpon>ListagemCinemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dashboard\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cinemas\EditarCinemas.resx">
+      <DependentUpon>EditarCinemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cinemas\RegistarCinemas.resx">
+      <DependentUpon>RegistarCinemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Filmes\FilmesEditar.resx">
+      <DependentUpon>FilmesEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Filmes\FilmesListagem.resx">
+      <DependentUpon>FilmesListagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Filmes\FilmesRegistar.resx">
+      <DependentUpon>FilmesRegistar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Salas\SalasEditar.resx">
+      <DependentUpon>SalasEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Salas\SalasListagem.resx">
+      <DependentUpon>SalasListagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Salas\SalasRegistar.resx">
+      <DependentUpon>SalasRegistar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Sessoes\SessoesEditar.resx">
+      <DependentUpon>SessoesEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Sessoes\SessoesListagem.resx">
+      <DependentUpon>SessoesListagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Sessoes\SessoesRegistar.resx">
+      <DependentUpon>SessoesRegistar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

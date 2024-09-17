@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\cinema\\usercontrols\\salas\\salaslistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|solutionrelative:cinema\\usercontrols\\salas\\salaslistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3A86442-61DB-4950-9A35-C78915E48A2F}|ClassLibrary2\\ClassLibrary.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\classlibrary2\\salaclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3A86442-61DB-4950-9A35-C78915E48A2F}|ClassLibrary2\\ClassLibrary.csproj|solutionrelative:classlibrary2\\salaclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\cinema\\usercontrols\\filmes\\filmeslistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|solutionrelative:cinema\\usercontrols\\filmes\\filmeslistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalaClass.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\ClassLibrary2\\SalaClass.cs",
+              "RelativeDocumentMoniker": "ClassLibrary2\\SalaClass.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\ClassLibrary2\\SalaClass.cs",
+              "RelativeToolTip": "ClassLibrary2\\SalaClass.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwHMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T22:41:23.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FilmesListagem.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Filmes\\FilmesListagem.cs",
+              "RelativeDocumentMoniker": "Cinema\\UserControls\\Filmes\\FilmesListagem.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Filmes\\FilmesListagem.cs",
+              "RelativeToolTip": "Cinema\\UserControls\\Filmes\\FilmesListagem.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T22:39:02.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SalasListagem.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Salas\\SalasListagem.cs",
+              "RelativeDocumentMoniker": "Cinema\\UserControls\\Salas\\SalasListagem.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Salas\\SalasListagem.cs",
+              "RelativeToolTip": "Cinema\\UserControls\\Salas\\SalasListagem.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T22:38:41.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,4 +1,5 @@
-﻿using ClassLibrary;
+﻿using Cinema;
+using ClassLibrary;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,10 @@ namespace Sala
 
         #region Propriedades
 
-        public int Id_Sala { get; set; }
+        public int Codigo_sala { get; set; }
         public string Descricao { get; set; }
         public int Id_Cinema { get; set; }
+        public string Cinema { get; set; }
 
         #endregion Propriedades
 
@@ -31,7 +33,11 @@ namespace Sala
             var salas = new List<SalaClass>();
             using (var connection = new Connection())
             {
-                var query = $"SELECT * FROM {Table}";
+                var query = $@"
+                    SELECT S.*, C.Nome as Cinema
+                    FROM {Table} S
+                    LEFT JOIN {CinemaClass.Table} C ON C.Id_cinema = S.Id_Cinema
+                ";
                 using (var command = new MySqlCommand(query, connection.MySqlConnection))
                 {
                     using (var reader = command.ExecuteReader())
@@ -72,10 +78,10 @@ namespace Sala
         {
             using (var connection = new Connection())
             {
-                var query = $"UPDATE {Table} SET Descricao = @Descricao, Id_Cinema = @Id_Cinema WHERE Id_Sala = @Id_Sala";
+                var query = $"UPDATE {Table} SET Descricao = @Descricao, Id_Cinema = @Id_Cinema WHERE Codigo_sala = @Codigo_sala";
                 using (var command = new MySqlCommand(query, connection.MySqlConnection))
                 {
-                    command.Parameters.AddWithValue("@Id_Sala", sala.Id_Sala);
+                    command.Parameters.AddWithValue("@Codigo_sala", sala.Codigo_sala);
                     command.Parameters.AddWithValue("@Descricao", sala.Descricao);
                     command.Parameters.AddWithValue("@Id_Cinema", sala.Id_Cinema);
                     command.ExecuteNonQuery();
@@ -86,15 +92,15 @@ namespace Sala
         /// <summary>
         /// Método para deletar uma sala (Delete)
         /// </summary>
-        /// <param name="id_Sala"></param>
-        public static void DeletarSala(int id_Sala)
+        /// <param name="codigo_sala"></param>
+        public static void DeletarSala(int codigo_sala)
         {
             using (var connection = new Connection())
             {
-                var query = $"DELETE FROM {Table} WHERE Id_Sala = @Id_Sala";
+                var query = $"DELETE FROM {Table} WHERE Codigo_sala = @Codigo_sala";
                 using (var command = new MySqlCommand(query, connection.MySqlConnection))
                 {
-                    command.Parameters.AddWithValue("@Id_Sala", id_Sala);
+                    command.Parameters.AddWithValue("@Codigo_sala", codigo_sala);
                     command.ExecuteNonQuery();
                 }
             }
@@ -104,9 +110,10 @@ namespace Sala
         {
             var sala = new SalaClass
             {
-                Id_Sala = reader.Cast<int>("Id_Sala"),
+                Codigo_sala = reader.Cast<int>("Codigo_sala"),
                 Descricao = reader.Cast<string>("Descricao"),
                 Id_Cinema = reader.Cast<int>("Id_Cinema"),
+                Cinema = reader.Cast<string>("Cinema"),
             };
             return sala;
         }

@@ -41,3 +41,15 @@ C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\D
 C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.exe
 C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.pdb
 C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Dashboard.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.EditarCinemas.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.RegistarCinemas.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Filmes.FilmesEditar.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Filmes.FilmesListagem.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Filmes.FilmesRegistar.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Salas.SalasEditar.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Salas.SalasListagem.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Salas.SalasRegistar.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Sessoes.SessoesEditar.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Sessoes.SessoesListagem.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.Sessoes.SessoesRegistar.resources
+C:\Users\rodri\Desktop\AyzrusDev\Preparacao_Regional\Cinemas\Cinema\Cinema\obj\Debug\Cinema.UserControls.ListagemCinemas.resources
