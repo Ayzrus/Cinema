@@ -12,5 +12,5 @@ O desenvolvimento está focado em aplicar boas práticas de programação, usabi
 
 ## Tecnologias Utilizadas
 - **C#** com **Windows Forms**: Interface gráfica e lógica da aplicação.
-- **SQL**: Para armazenamento e gerenciamento de dados de filmes, sessões, cinemas e salas.
+- **MySQL**: Para armazenamento e gerenciamento de dados de filmes, sessões, cinemas e salas.
 - **POO**: Princípios da Programação Orientada a Objetos aplicados na modelagem das entidades e lógica do sistema.
