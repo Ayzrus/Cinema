@@ -1,5 +1,7 @@
 ﻿using ClassLibrary;
+using Filmes;
 using MySql.Data.MySqlClient;
+using Sala;
 using System;
 using System.Collections.Generic;
 
@@ -37,7 +39,24 @@ namespace Sessoes
             var sessoes = new List<SessoesClass>();
             using (var connection = new Connection())
             {
-                var query = $"SELECT * FROM {Table}";
+                var query = $@"
+                    SELECT 
+                    s.Id_Sessao,
+                    s.Codigo_sala,
+                    s.Codigo_filme,
+                    s.Data,
+                    s.Hora,
+                    s.Ativa,
+                    f.Nome AS Nome_Filme,
+                    sa.Descricao AS Nome_Sala,
+                    sa.Id_cinema
+                FROM 
+                    {Table} s
+                JOIN 
+                    {FilmesClass.Table} f ON s.Codigo_filme = f.Codigo_filme
+                JOIN 
+                    {SalaClass.Table} sa ON s.Codigo_sala = sa.Codigo_sala
+                ";
                 using (var command = new MySqlCommand(query, connection.MySqlConnection))
                 {
                     using (var reader = command.ExecuteReader())
@@ -120,7 +139,7 @@ namespace Sessoes
             var sessoes = new List<SessoesClass>();
             using (var connection = new Connection())
             {
-                var query = @"
+                var query = $@"
                     SELECT 
                     s.Id_Sessao,
                     s.Codigo_sala,
@@ -132,11 +151,11 @@ namespace Sessoes
                     sa.Descricao AS Nome_Sala,
                     sa.Id_cinema
                 FROM 
-                    Sessao s
+                    {Table} s
                 JOIN 
-                    Filme f ON s.Codigo_filme = f.Codigo_filme
+                    {FilmesClass.Table} f ON s.Codigo_filme = f.Codigo_filme
                 JOIN 
-                    Sala sa ON s.Codigo_sala = sa.Codigo_sala
+                    {SalaClass.Table} sa ON s.Codigo_sala = sa.Codigo_sala
                 WHERE 
                     s.Ativa = 1
                 ";

@@ -82,6 +82,7 @@ namespace Cinema.UserControls
             SessoesData.CellFormatting += SessoesData_CellFormatting;
         }
 
+        // Evento para formatar a hora
         private void SessoesData_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             // Formata a coluna Hora no formato "00h00m"
@@ -93,6 +94,7 @@ namespace Cinema.UserControls
             }
         }
 
+        // Evento para captar a troca de item na combobox
         private void ComboBoxFiltro_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Obtém o Id do cinema selecionado

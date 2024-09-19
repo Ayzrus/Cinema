@@ -58,7 +58,7 @@ namespace Cinema.UserControls.Filmes
             // Verifica se o botão "Apagar" foi clicado
             if (FilmesData.Columns[e.ColumnIndex].Name == "Delete")
             {
-                // Obtém o cinema da linha correspondente
+                // Obtém o filme da linha correspondente
                 var filmeSelecionado = (FilmesClass)FilmesData.Rows[e.RowIndex].DataBoundItem;
 
                 // Confirmação antes de apagar

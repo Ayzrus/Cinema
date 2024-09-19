@@ -54,11 +54,11 @@ namespace Cinema.UserControls.Salas
             // Verifica se o botão "Apagar" foi clicado
             if (SalasData.Columns[e.ColumnIndex].Name == "Delete")
             {
-                // Obtém o cinema da linha correspondente
+                // Obtém a sala da linha correspondente
                 var salaSelecionada = (SalaClass)SalasData.Rows[e.RowIndex].DataBoundItem;
 
                 // Confirmação antes de apagar
-                DialogResult result = MessageBox.Show($"Tem certeza que deseja apagar o filme: {salaSelecionada.Descricao}?",
+                DialogResult result = MessageBox.Show($"Tem certeza que deseja apagar a sala: {salaSelecionada.Descricao}?",
                     "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (result == DialogResult.Yes)
