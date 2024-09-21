@@ -97,23 +97,25 @@ namespace Cinema.UserControls
         // Evento para captar a troca de item na combobox
         private void ComboBoxFiltro_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Obtém o Id do cinema selecionado
-            int selectedCinemaId = (int)ComboBoxFiltro.SelectedValue;
-
-            // Verifica se a opção "Mostrar Todos" está selecionada
-            if (selectedCinemaId == -1)
+            // Verifica se a ComboBox tem um valor selecionado válido
+            if (ComboBoxFiltro.SelectedValue != null && int.TryParse(ComboBoxFiltro.SelectedValue.ToString(), out int selectedCinemaId))
             {
-                // Mostra todas as sessões
-                SessoesData.DataSource = sessoes;
-            }
-            else
-            {
-                // Filtra as sessões com base no cinema selecionado
-                var filteredSessoes = sessoes.Where(sessao => sessao.Id_Cinema == selectedCinemaId).ToList();
+                // Verifica se a opção "Mostrar Todos" está selecionada
+                if (selectedCinemaId == -1)
+                {
+                    // Mostra todas as sessões
+                    SessoesData.DataSource = sessoes;
+                }
+                else
+                {
+                    // Filtra as sessões com base no cinema selecionado
+                    var filteredSessoes = sessoes.Where(sessao => sessao.Id_Cinema == selectedCinemaId).ToList();
 
-                // Atualiza o DataGridView com as sessões filtradas
-                SessoesData.DataSource = filteredSessoes;
+                    // Atualiza o DataGridView com as sessões filtradas
+                    SessoesData.DataSource = filteredSessoes;
+                }
             }
         }
+
     }
 }

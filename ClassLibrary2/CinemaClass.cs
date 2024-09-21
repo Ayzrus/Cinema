@@ -1,6 +1,7 @@
 ﻿using ClassLibrary;
 using Local;
 using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 
 namespace Cinema
@@ -73,20 +74,35 @@ namespace Cinema
         /// Método para atualizar um cinema existente (Update)
         /// </summary>
         /// <param name="cinema"></param>
-        public static void AtualizarCinema(CinemaClass cinema)
+        public static bool AtualizarCinema(CinemaClass cinema)
         {
-            using (var connection = new Connection())
+            try
             {
-                var query = $"UPDATE {Table} SET Nome = @Nome, Id_Local = @Id_Local WHERE Id_Cinema = @Id_Cinema";
-                using (var command = new MySqlCommand(query, connection.MySqlConnection))
+                using (var connection = new Connection())
                 {
-                    command.Parameters.AddWithValue("@Id_Cinema", cinema.Id_Cinema);
-                    command.Parameters.AddWithValue("@Nome", cinema.Nome);
-                    command.Parameters.AddWithValue("@Id_Local", cinema.Id_Local);
-                    command.ExecuteNonQuery();
+                    var query = $"UPDATE {Table} SET Nome = @Nome, Id_Local = @Id_Local WHERE Id_Cinema = @Id_Cinema";
+                    using (var command = new MySqlCommand(query, connection.MySqlConnection))
+                    {
+                        command.Parameters.AddWithValue("@Id_Cinema", cinema.Id_Cinema);
+                        command.Parameters.AddWithValue("@Nome", cinema.Nome);
+                        command.Parameters.AddWithValue("@Id_Local", cinema.Id_Local);
+
+                        // Verifica se alguma linha foi afetada
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        // Se pelo menos uma linha foi afetada, retorna true
+                        return rowsAffected > 0;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                // Aqui você pode fazer um log do erro se necessário
+                Console.WriteLine($"Erro ao atualizar cinema: {ex.Message}");
+                return false;
+            }
         }
+
 
         /// <summary>
         /// Método para deletar um cinema (Delete)
@@ -103,6 +119,37 @@ namespace Cinema
                     command.ExecuteNonQuery();
                 }
             }
+        }
+
+        /// <summary>
+        /// Pega um cinema específico pelo Id (Read)
+        /// </summary>
+        /// <param name="id_Cinema"></param>
+        /// <returns></returns>
+        public static CinemaClass GetCinema(int id_Cinema)
+        {
+            CinemaClass cinema = null;
+            using (var connection = new Connection())
+            {
+                var query = $@"
+            SELECT C.*, L.Descricao AS Local 
+            FROM {Table} C
+            LEFT JOIN {LocalClass.Table} L ON L.Id = C.Id_local
+            WHERE C.Id_cinema = @Id_Cinema
+        ";
+                using (var command = new MySqlCommand(query, connection.MySqlConnection))
+                {
+                    command.Parameters.AddWithValue("@Id_Cinema", id_Cinema);
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            cinema = MapFromReader(reader);
+                        }
+                    }
+                }
+            }
+            return cinema;
         }
 
         private static CinemaClass MapFromReader(MySqlDataReader reader)
