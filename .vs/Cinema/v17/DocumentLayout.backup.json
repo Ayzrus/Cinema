@@ -7,15 +7,11 @@
       "RelativeMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|solutionrelative:cinema\\usercontrols\\cinemas\\editarcinemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3A86442-61DB-4950-9A35-C78915E48A2F}|ClassLibrary2\\ClassLibrary.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\classlibrary2\\cinemaclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3A86442-61DB-4950-9A35-C78915E48A2F}|ClassLibrary2\\ClassLibrary.csproj|solutionrelative:classlibrary2\\cinemaclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\cinema\\usercontrols\\cinemas\\editarcinemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\cinema\\usercontrols\\cinemas\\editarcinemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|solutionrelative:cinema\\usercontrols\\cinemas\\editarcinemas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|c:\\users\\rodri\\desktop\\ayzrusdev\\preparacao_regional\\cinemas\\cinema\\cinema\\usercontrols\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\cinema\\usercontrols\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E6CE8F-6C86-4E70-BCA9-9616E688CB1F}|Cinema\\Cinema.csproj|solutionrelative:cinema\\usercontrols\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,24 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CinemaClass.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\ClassLibrary2\\CinemaClass.cs",
-              "RelativeDocumentMoniker": "ClassLibrary2\\CinemaClass.cs",
-              "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\ClassLibrary2\\CinemaClass.cs",
-              "RelativeToolTip": "ClassLibrary2\\CinemaClass.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAiwGgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T16:32:51.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Dashboard\\Dashboard.cs",
               "RelativeDocumentMoniker": "Cinema\\UserControls\\Dashboard\\Dashboard.cs",
@@ -51,8 +34,7 @@
               "RelativeToolTip": "Cinema\\UserControls\\Dashboard\\Dashboard.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAkwHQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T16:22:44.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T16:22:44.651Z"
             },
             {
               "$type": "Document",
@@ -62,22 +44,21 @@
               "RelativeDocumentMoniker": "Cinema\\UserControls\\Cinemas\\EditarCinemas.cs",
               "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Cinemas\\EditarCinemas.cs",
               "RelativeToolTip": "Cinema\\UserControls\\Cinemas\\EditarCinemas.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowGsAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwGIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T16:20:49.861Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EditarCinemas.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Cinemas\\EditarCinemas.cs",
               "RelativeDocumentMoniker": "Cinema\\UserControls\\Cinemas\\EditarCinemas.cs",
               "ToolTip": "C:\\Users\\rodri\\Desktop\\AyzrusDev\\Preparacao_Regional\\Cinemas\\Cinema\\Cinema\\UserControls\\Cinemas\\EditarCinemas.cs [Design]",
               "RelativeToolTip": "Cinema\\UserControls\\Cinemas\\EditarCinemas.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T16:10:58.452Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-21T16:10:58.452Z"
             }
           ]
         }
